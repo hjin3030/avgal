@@ -5,6 +5,8 @@ import Bodega from "./pages/bodega/bodega";
 import Produccion from "./pages/produccion/produccion";
 import Reportes from "./pages/reportes/reportes";
 import Configuracion from "./pages/configuracion/configuracion";
+import HistorialContadores from "./pages/historial-contadores";
+import HistorialBalde from "./pages/historial-balde";
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
         <Route path="/produccion" element={<Produccion />} />
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/configuracion" element={<Configuracion />} />
+        <Route path="/historial-contadores" element={<HistorialContadores />} />
+        <Route path="/historial-balde" element={<HistorialBalde />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;
